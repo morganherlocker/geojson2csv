@@ -16,7 +16,7 @@ module.exports = function(inPath, outPath, done){
     // add data
     _.each(geojson.features, function(feature){
       _.each(Object.keys(geojson.features[0].properties), function(key, i){
-        csv += "'"+feature.properties[key] + '",'
+        csv += '"'+feature.properties[key] + '",'
       })
       csv += feature.geometry.coordinates[0] + ','
       csv += feature.geometry.coordinates[1] + '\n'
