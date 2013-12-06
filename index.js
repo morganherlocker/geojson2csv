@@ -23,7 +23,8 @@ module.exports = function(inPath, outPath, done){
     })
 
     // output csv file
-    console.log(csv)
-    done(null, csv)
+    fs.writeFile(outPath, csv, function(err){
+      done(err, csv)
+    })
   })
 }
