@@ -5,21 +5,19 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/morganherlocker/geojson2shape.git"
+    "url": "https://github.com/morganherlocker/geojson2csv.git"
   },
   "keywords": [
     "geojson",
     "conversion",
     "gis",
-    "shape",
-    "shapefile",
-    "shp",
+    "csv",
     "convert"
   ],
   "author": "morganherlocker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/morganherlocker/geojson2shape/issues"
+    "url": "https://github.com/morganherlocker/geojson2csv/issues"
   },
   "dependencies": {
     "lodash": "~2.4.1"
