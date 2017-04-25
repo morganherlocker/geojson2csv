@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+var geojson2csv = require('../');
+var _ = require('lodash');
+
+var argv = process.argv;
+
+function usage() {
+  console.log("Usage:\tgeojson2csv inputfile outputfile");
+}
+
+if( _.indexOf(argv, '--help') > 0 || _.indexOf(argv, '-h') >0 ) {
+  usage();
+  return 0;
+}
+
+if(argv.length < 4) {
+  console.log("Missing arguments");
+  usage();
+  return -1;
+}
+
+var inPath = argv[2];
+var outPath = argv[3];
+
+geojson2csv(inPath, outPath, function(err) {
+  if(err) throw err;
+})
