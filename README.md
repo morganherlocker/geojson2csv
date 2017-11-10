@@ -28,6 +28,13 @@ mocha .
 **Command Line**
 
 Running from Command Line
-```
-$ ./node_modules/.bin/geojson2csv inputfile outputfile
-```
+
+1. absolute path:
+	```
+	$ ./node_modules/.bin/geojson2csv inputfile outputfile
+	```
+
+2. with npm
+	```
+	$ num run geojson2csv inputfile outputfile
+	```
