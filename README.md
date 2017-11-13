@@ -1,5 +1,4 @@
-geojson2csv
-===========
+# geojson2csv
 
 a node.js module for converting a geojson file to a csv file
 
@@ -7,7 +6,8 @@ a node.js module for converting a geojson file to a csv file
 npm install geojson2csv
 ```
 
-**API**
+## API
+
 This module takes a geojson feature collection of points and converts it to a csv file.
 
 ```javascript
@@ -25,16 +25,27 @@ cd test
 mocha .
 ```
 
-**Command Line**
+## Command Line
 
 Running from Command Line
 
 1. absolute path:
+
 	```
 	$ ./node_modules/.bin/geojson2csv inputfile outputfile
 	```
 
-2. with npm
-	```
-	$ num run geojson2csv inputfile outputfile
+2. with npm  
+
+    `pacakage.json:`
+    ```
+    "scripts": {
+	    "geojson2csv" : "geojson2csv"
+    }
+    ```
+
+    then in the command line
+
+    ```
+	$ npm run -- geojson2csv inputfile outputfile
 	```
