@@ -47,5 +47,5 @@ Running from Command Line
     then in the command line
 
     ```
-	$ npm run -- geojson2csv inputfile outputfile
+	$ npm run geojson2csv -- inputfile outputfile
 	```
