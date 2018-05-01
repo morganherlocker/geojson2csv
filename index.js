@@ -18,8 +18,8 @@ module.exports = function(inPath, outPath, done){
       _.each(Object.keys(geojson.features[0].properties), function(key, i){
         csv += '"'+feature.properties[key] + '",'
       })
-      csv += feature.geometry.coordinates[0] + ','
-      csv += feature.geometry.coordinates[1] + '\n'
+      csv += feature.geometry.coordinates[1] + ','
+      csv += feature.geometry.coordinates[0] + '\n'
     })
 
     // output csv file
